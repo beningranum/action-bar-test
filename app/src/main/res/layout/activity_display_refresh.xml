@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.beningranum.actionbartest.DisplayRefresh">
     <RelativeLayout
+        android:id="@+id/layoutTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
@@ -45,4 +46,94 @@
             android:layout_below="@id/JobDesc"
             android:layout_toRightOf="@id/IconIseng"/>
     </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/JobDescHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Job Description"
+                android:gravity="center"
+                android:background="@color/GC_BorderColor"/>
+            <TextView
+                android:id="@+id/JobDescTextView"
+                android:text="@string/dummies"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_below="@+id/JobDescHeader"
+                android:singleLine="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/aboutJobHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="About"
+                android:gravity="center"
+                android:background="@color/GC_BorderColor"
+                android:layout_below="@id/JobDescTextView"/>
+            <TextView
+                android:id="@+id/aboutJobTextView"
+                android:text="@string/dummies"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_below="@+id/aboutJobHeader"
+                android:singleLine="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/salariesHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Salaries"
+                android:gravity="center"
+                android:background="@color/GC_BorderColor"
+                android:layout_below="@id/aboutJobTextView"/>
+            <TextView
+                android:id="@+id/salariesTextView"
+                android:text="@string/dummies"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_below="@+id/salariesHeader"
+                android:singleLine="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:src="@drawable/ic_action_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:src="@drawable/ic_action_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:src="@drawable/ic_action_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:src="@drawable/ic_action_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
 </RelativeLayout>

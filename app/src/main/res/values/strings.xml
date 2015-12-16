@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Action Bar Test</string>
+    <string name="dummies">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus egestas tortor et erat euismod vestibulum. Nullam mollis dignissim lorem eget vulputate. Cras elit lacus, semper eu vehicula in, eleifend id mauris. Donec dictum tristique luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam consectetur dignissim odio ac aliquet. Maecenas quam eros, rutrum accumsan diam pretium, ullamcorper tempor orci. Aenean vel leo libero. Etiam consectetur odio ut porttitor imperdiet. Sed quis tellus sagittis, luctus nulla sed, lobortis dolor.</string>
 </resources>

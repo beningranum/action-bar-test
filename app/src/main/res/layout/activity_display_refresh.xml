@@ -4,5 +4,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.beningranum.actionbartest.DisplayRefresh">
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:id="@+id/IconIseng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:src="@drawable/ic_action_error"/>
+        <TextView
+            android:id="@+id/JobName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sales Promotion Girl"
+            android:paddingBottom="3dp"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/IconIseng"/>
+        <TextView
+            android:id="@+id/JobDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indonesia Motor Show 2016 event sales promotion girl"
+            android:singleLine="false"
+            android:textColor="#FFFFFF"
+            android:maxLines="2"
+            android:layout_below="@id/JobName"
+            android:layout_toRightOf="@id/IconIseng"/>
+        <TextView
+            android:id="@+id/JobLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jakarta - Indonesia"
+            android:textColor="#FFFFFF"
+            android:paddingTop="3dp"
+            android:layout_below="@id/JobDesc"
+            android:layout_toRightOf="@id/IconIseng"/>
+    </RelativeLayout>
 </RelativeLayout>

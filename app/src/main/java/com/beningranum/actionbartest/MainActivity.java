@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // http://www.androidhive.info/2013/11/android-working-with-action-bar/
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    // http://www.androidhive.info/2013/11/android-working-with-action-bar/
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 foundMe();
                 return true;
             case R.id.action_refresh:
+                refreshMe();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -44,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void refreshMe(){
-        
+        Intent intent = new Intent(this, DisplayRefresh.class);
+        startActivity(intent);
     }
 }

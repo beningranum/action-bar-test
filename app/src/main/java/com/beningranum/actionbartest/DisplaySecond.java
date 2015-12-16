@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class DisplaySecond extends AppCompatActivity {
 
+    // http://javatechig.com/android/actionbar-with-custom-view-example-in-android
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
